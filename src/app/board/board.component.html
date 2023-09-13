@@ -1,0 +1,22 @@
+<div class="board-container">
+    <div class="boardgame">
+        <div class="container"  *ngFor="let row of boardTable; let i = index">
+            <div class="row" *ngIf="i === 0">
+                <span *ngIf="i === 0"></span>
+                <span *ngFor="let it of row; let in = index">{{in+1}}</span>
+            </div>
+            <div class="row">
+                <span>
+                    {{headers[i]}}
+                </span>
+                <span class="cell" *ngFor="let r of row">
+                    <app-cell [gameId]="r" (sink)="wasSink($event)"></app-cell>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="steps">
+        <app-steps [steps]="steps"></app-steps>
+    </div>
+</div>

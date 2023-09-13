@@ -1,0 +1,15 @@
+.content{
+    background-image: url('/assets/background.jpeg');
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+:host(body){
+    margin: 0
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0;
+}

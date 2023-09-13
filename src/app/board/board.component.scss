@@ -1,0 +1,41 @@
+.board-container{
+    display: flex;
+    flex-direction: row;
+}
+.boardgame{
+    margin-left: 50px;
+    width: 50%;
+    background-color: rgba($color: #dddddd, $alpha: .70);
+    padding: 20px 30px 30px 20px;
+    border-radius: 15px;
+}
+.steps{
+    width: 25%;
+    margin-left: 15px
+}
+.row{
+    display: flex;
+    span{
+        height: 45px;
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.container:last-child{
+   .cell{
+       border-bottom: 1px solid #999
+   }
+}
+.cell{
+    position: relative;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    &:last-child{
+        border-right: 1px solid #999
+    }
+}
